@@ -24,6 +24,7 @@ window.onload = function () {
 };
 
 function decrypt(word, keyword) {
+    let decryptWord = "";
     for (let i = 0; i < word.length; i++) {
         decryptWord += alphabet.charAt(
         (alphabet.indexOf(word.charAt(i)) +
