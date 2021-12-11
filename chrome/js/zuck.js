@@ -82,29 +82,29 @@ function DeZuckIt() {
 
 function saveToFile() {
   // Create a new Blob (html5 magic) that conatins the data from your form feild
-  var blob = new Blob([message.value], { type: "text/plain;charset=utf-8" });
+  let blob = new Blob([message.value], { type: "text/plain;charset=utf-8" });
   // It is a link to that file
-  var url = URL.createObjectURL(blob);
+  let url = URL.createObjectURL(blob);
   // Set up the link
-  var link = document.createElement("a");
+  let link = document.createElement("a");
   link.href = url;
   link.download = "message.txt";
   // This part simulate a click event
-  var event = new MouseEvent("click");
+  let event = new MouseEvent("click");
   link.dispatchEvent(event);
 }
 
 function getFile() {
   // create a file selector
-  var fileSelector = document.createElement("input");
+  let fileSelector = document.createElement("input");
   fileSelector.type = "file";
   fileSelector.click();
   // wait for the file to be selected
   fileSelector.onchange = function () {
     // get the file
-    var file = fileSelector.files[0];
+    let file = fileSelector.files[0];
     // create a new FileReader
-    var reader = new FileReader();
+    let reader = new FileReader();
     // wait for the load event
     reader.onload = function () {
       // put the data into the form feild
@@ -121,7 +121,14 @@ function about() {
         David H. Isakson (c) 2021"\n
         Dezuckit is a simple tool to encrypt and decrypt messages.\n
         It is a free software and you can use it for whatever you want.\n
-        `;
+        You can find the source code on GitHub:\n
+        githuy.com/ikeman32/Dezuckit\n\n
+        Key features:\n
+        - Encrypt and decrypt messages with a password.\n
+        - Save the encrypted message to a file.\n
+        - Copy the encrypted message to the clipboard.\n
+        - Load a file into the form field.\n
+        - Clear the form feild.\n`;
   message.value = msg;
 }
 
