@@ -3,10 +3,9 @@
     "version": "1.0.0",
     "description": "Basic encryption and decryption",
     "background": {
-        "scripts": ["js/zuck.js"],
-        "persistent": false
+        "serviceworker": ["js/zuck.js"]
     },
-    "browser_action": {
+    "action": {
         "default_popup": "dezuck.html",
         "default_icon": {
             "16": "images/zuck16.png",
@@ -15,5 +14,5 @@
             "128": "images/zuck128.png"
         }
     },
-    "manifest_version": 2
+    "manifest_version": 3
 }
