@@ -127,7 +127,7 @@ function about() {
         Dezuckit is a simple tool to encrypt and decrypt messages.\n
         It is a free software and you can use it for whatever you want.\n
         You can find the source code on GitHub:\n
-        githuy.com/ikeman32/Dezuckit\n\n
+        github.com/ikeman32/Dezuckit\n\n
         Key features:\n
         - Encrypt and decrypt messages with a password.\n
         - Save the encrypted message to a file.\n
