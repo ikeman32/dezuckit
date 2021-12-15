@@ -9,10 +9,14 @@ var foc = document.getElementById("keyword");
 var HowTo = document.getElementById("howToUse");
 var message = document.getElementById("textInput");
 var keyword = document.getElementById("keyword");
+var email = document.getElementById("email");
 
 // Set the alphabet
 var alphabet =
   "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789\n.!?,:;'/ ";
+
+// google script ID
+var scriptId = "https://www.googleapis.com/auth/script.send_mail";
 
 window.onload = function () {
   // Listen and Handle click events for the buttons
@@ -24,6 +28,7 @@ window.onload = function () {
   Save ? Save.addEventListener("click", saveToFile) : null;
   About ? About.addEventListener("click", about) : null;
   HowTo ? HowTo.addEventListener("click", instructions) : null;
+  email ? email.addEventListener("click", sendMail) : null;
 };
 
 function decrypt(word, keyword) {
