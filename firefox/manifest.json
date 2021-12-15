@@ -1,13 +1,12 @@
 {
-    "manifest_version": 2,    
-    "name": "Fzuck",
-    "version": "0.1",
-    "description": "Phonetically spell everything and paste it to Fb or other places",
+    "manifest_version": 3,    
+    "name": "Dezuckit",
+    "version": "1.0.0",
+    "description": "Basic encryption and decryption",
     "background": {
-        "scripts": ["js/Fzuck.js"],
-        "persistent": false
+        "serviceworker": ["js/zuck.js"]
     },
-    "browser_action": {
+    "action": {
         "default_popup": "Fzuck.html",
         "default_icon": {
             "16": "images/zuck16.png",
