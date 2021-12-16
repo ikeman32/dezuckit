@@ -2,10 +2,16 @@ html,
 body {
     height: 100%;
     margin: 0;
-    background-image: url("../images/zuck.png");
+    background-image: url("../images/nocensorship.png");
     background-size: 100% 100%;
 }
 
+.container {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
 
 .textArea {
     display: flex;
@@ -26,4 +32,12 @@ body {
     border: none;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.logo {
+    margin-left: 90%;
+    margin-bottom: 1rem;
+    width: 20%;
+    height: 20%;
+    z-index: -1;
 }
