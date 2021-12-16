@@ -123,7 +123,7 @@ function getFile() {
 
 function about() {
   let msg = `Dezuckit version 1.0.0! \n
-        David H. Isakson (c) 2021"\n
+        Scripts By Duke\n
         Dezuckit is a simple tool to encrypt and decrypt messages.\n
         It is a free software and you can use it for whatever you want.\n
         You can find the source code on GitHub:\n
